@@ -1,4 +1,10 @@
 exports.config = {
+  plugins: {
+    wdio: {
+      enabled: true,
+      services: ['selenium-standalone']
+    }
+  },
   tests: './*_test.js',
   output: './output',
   helpers: {
@@ -12,5 +18,21 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
-  name: 'tst'
+  name: 'tst',
+  
+  helpers: {
+    WebDriver: {
+      url: 'https://myapp.com',
+      browser: 'chrome',
+      host: '127.0.0.1',
+      port: 4444,
+      restart: false,
+      windowSize: '1920x1080',
+      desiredCapabilities: {
+        chromeOptions: {
+          args: [ /*"--headless",*/ "--disable-gpu", "--no-sandbox" ]
+        }
+      }
+    },
+  }
 }
