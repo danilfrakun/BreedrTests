@@ -27,7 +27,7 @@ exports.config = {
       host: '127.0.0.1',
       port: 4444,
       restart: false,
-      windowSize: '1920x1080',
+      windowSize: false,
       desiredCapabilities: {
         chromeOptions: {
           args: [ /*"--headless",*/ "--disable-gpu", "--no-sandbox" ]
