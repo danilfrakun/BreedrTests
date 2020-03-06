@@ -24,5 +24,10 @@ Scenario('check if user can create L2D RFL', (I) => {
     I.scrollTo('//*[@id="root"]/div/div[2]/div[1]/div/div[2]/div[2]/div[1]/div[2]/p');
     I.fillField('#maxWeight', 123);
     I.fillField('#maxAge', 123);
-    I.wait(5);
+    I.fillField('#price', 123);
+    I.click('Share with my preferred suppliers');
+    I.scrollPageToTop();
+    I.click('Create now');
+    I.wait(2);
+    I.see('RFL was successfully saved');
 });
