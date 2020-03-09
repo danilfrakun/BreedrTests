@@ -12,7 +12,7 @@ Scenario('test something', (I) => {
     I.wait(1);
     I.click('//*[@id="root"]/div/div[1]/div/nav[1]/a[2]/span'); //Trading icon
     I.wait(1);
-    I.click('//*[@id="root"]/div/div[2]/div[1]/div/div[2]/div[2]/button'); //New RFL button
+    I.click('//*[@id="root"]/div/div[2]/div[1]/div/div[2]/div[2]/div/button'); //New RFL button
     I.scrollTo('#minWeight');
     I.fillField('#minWeight', '150');
     I.fillField('#maxWeight', '100');
