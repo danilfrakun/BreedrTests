@@ -6,5 +6,8 @@ Scenario('test something', (I) => {
     I.waitForText('Breeds', 5);
     I.click('//*[@id="root"]/div/div[2]/div[1]/div/div[3]/div/a[2]');//Groups tab
     I.click('//*[@id="root"]/div/div[2]/div[1]/div/div[2]/div/div[1]/div[2]/div/button');//New group button
-    I.wait(5);
+    I.fillField('#name', 'newGroupName');
+    I.fillField('#targetWeight', '123');
+    I.click('Create group');
+    I.wait(5);//WAit for FE fixes
 });
