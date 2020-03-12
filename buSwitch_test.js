@@ -6,5 +6,5 @@ Scenario('test something', (I) => {
     I.click('#select-businessUnitSwitcher');
     I.wait(0.5);
     I.click('//*[@id="menu-businessUnitSwitcher"]/div[2]/ul/li[10]');
-    I.waitForText('Some animals not synced to BCMS', 5);
+    I.waitForText('Some animals not synced to BCMS', 6);
 });
