@@ -29,5 +29,4 @@ Scenario('test something', (I) => {
     I.fillField('#confirmation', 'DELETE');
     I.click('/html/body/div[4]/div[2]/div[2]/div[2]/button');//Confirm
     I.waitForText('My livestock', 5);
-    I.wait(4);
 });
